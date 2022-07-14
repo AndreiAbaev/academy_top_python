@@ -34,9 +34,5 @@ with open('war and peace.txt', encoding='utf-8') as f:
 # Запись результата в текстовый файл.
 with open('result.txt', 'w') as new_f:
     for word, freq in frequency.items():
-        if freq % 10 in (2, 3, 4):
-            new_f.write(f'Слово {word} встречается {freq} раза\n')
-        else:
-            new_f.write(f'Слово {word} встречается {freq} раз\n')
-
-
+        new_f.write(f'Слово {word} встречается {freq} раз\n')
+        
